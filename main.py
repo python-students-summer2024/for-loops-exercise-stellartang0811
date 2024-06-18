@@ -11,14 +11,8 @@ from virus_transmission import calculate_infections
 starting_infections = 2
 reproduction_rate = 1.1
 num_days = 62
-total_infections = calculate_infections(
-    starting_infections, reproduction_rate, num_days
-)  # calculate total infections
-print(
-    "{} people will go on to create a total of {} infections over {} days, assuming a reproduction rate of {}".format(
-        starting_infections, total_infections, num_days, reproduction_rate
-    )
-)
+total_infections = calculate_infections(starting_infections, reproduction_rate, num_days)  # calculate total infections
+print("{} people will go on to create a total of {} infections over {} days, assuming a reproduction rate of {}".format(starting_infections, total_infections, num_days, reproduction_rate))
 
 
 # #### NUMBER GUESSING ####
